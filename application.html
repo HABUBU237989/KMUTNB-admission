@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>แบบฟอร์มสมัครเรียน | KMUTNB Admission 2570</title>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="brand-group">
+      <div class="logo-badge">KMUTNB</div>
+      <div class="brand-text">
+        <strong>KMUTNB ADMISSION</strong>
+        <span>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="เมนูหลัก">
+      <a href="index.html">หน้าแรก</a>
+      <a href="programs.html">หลักสูตร</a>
+      <a href="qualification.html">คุณสมบัติผู้สมัคร</a>
+      <a href="schedule.html">กำหนดการรับสมัคร</a>
+      <a href="contact.html">ติดต่อเรา</a>
+    </nav>
+
+    <a href="application.html" class="register-button active">สมัครเรียน</a>
+  </header>
+
+  <main>
+    <section class="page-banner application-banner">
+      <div class="page-banner-overlay"></div>
+      <div class="page-banner-content">
+        <div class="banner-text">
+          <h1>แบบฟอร์มสมัครเรียน มจพ. 2570</h1>
+          <p>กรุณากรอกข้อมูลส่วนตัวและหลักสูตรที่ต้องการเข้าศึกษาต่อให้ครบถ้วนถูกต้อง</p>
+        </div>
+        <div class="year-badge">
+          <strong>TCAS 2570</strong>
+          <span>ปีการศึกษา 2570</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="application-content">
+      <div class="application-card">
+        <div class="form-heading">
+          <h2>ข้อมูลการสมัครเข้าศึกษาต่อมหาวิทยาลัย</h2>
+          <p>โปรดกรอกข้อมูลของท่านด้วยความเป็นจริง ทางมหาวิทยาลัยจะใช้ข้อมูลนี้เป็นหลักฐานการสมัครขั้นต้น</p>
+        </div>
+
+        <form class="application-form" action="#" method="post">
+          <fieldset class="form-section personal-section">
+            <legend>ประวัติส่วนตัวผู้สมัคร</legend>
+
+            <div class="form-row">
+              <label for="first-name">ชื่อ (First Name) *</label>
+              <input type="text" id="first-name" name="first-name"
+                placeholder="กรุณากรอกชื่อจริงภาษาไทย (ไม่ต้องใส่คำนำหน้านาม)" required>
+            </div>
+
+            <div class="form-row">
+              <label for="last-name">นามสกุล (Last Name) *</label>
+              <input type="text" id="last-name" name="last-name" placeholder="กรุณากรอกนามสกุลภาษาไทย" required>
+            </div>
+          </fieldset>
+
+          <hr>
+
+          <fieldset class="form-section program-section">
+            <legend>หลักสูตรและสาขาที่ต้องการศึกษาต่อ</legend>
+
+            <div class="form-row">
+              <label for="education">วุฒิที่จบมา (Education Level) *</label>
+              <select id="education" name="education" required>
+                <option value="" selected disabled>-- เลือกวุฒิการศึกษาสูงสุดของท่าน --</option>
+                <option value="m6">มัธยมศึกษาปีที่ 6</option>
+                <option value="vocational">ประกาศนียบัตรวิชาชีพ (ปวช.)</option>
+                <option value="high-vocational">ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="faculty">คณะที่จะเลือก (Faculty) *</label>
+              <select id="faculty" name="faculty" required>
+                <option value="" selected disabled>-- เลือกคณะ/วิทยาลัยที่ท่านต้องการสมัคร --</option>
+                <option value="engineering">คณะวิศวกรรมศาสตร์</option>
+                <option value="industrial-technology">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                <option value="business">คณะบริหารธุรกิจ</option>
+                <option value="science">คณะวิทยาศาสตร์</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="program">สาขาที่จะเลือก (Program/Major) *</label>
+              <select id="program" name="program" required>
+                <option value="" selected disabled>-- เลือกสาขาวิชาที่ต้องการศึกษาต่อ --</option>
+                <option value="engineering">วิศวกรรมศาสตร์</option>
+                <option value="industrial-management">เทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                <option value="business">บริหารธุรกิจ</option>
+                <option value="science">วิทยาศาสตร์</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div class="consent-box">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">ข้าพเจ้าขอรับรองว่าข้อมูลข้างต้นทั้งหมดถูกต้อง
+              และยอมรับเงื่อนไขในการพิจารณาของมหาวิทยาลัย</label>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="submit-button">สมัครเรียน (Submit Application)</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <div class="footer-brand">
+          <span class="logo-badge">KMUTNB</span>
+          <strong>KMUTNB ADMISSION 2570</strong>
+        </div>
+        <address>
+          มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี<br>
+          เลขที่ 129 หมู่ 21 ตำบลเนินหอม อำเภอเมือง จังหวัดปราจีนบุรี 25230
+        </address>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright © 2570 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

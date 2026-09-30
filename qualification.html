@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>ตรวจสอบคุณวุฒิ | KMUTNB Admission 2570</title>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="brand-group">
+      <div class="logo-badge">KMUTNB</div>
+      <div class="brand-text">
+        <strong>KMUTNB ADMISSION</strong>
+        <span>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="เมนูหลัก">
+      <a href="index.html">หน้าแรก</a>
+      <a href="programs.html">หลักสูตร</a>
+      <a href="qualification.html" class="active">คุณสมบัติผู้สมัคร</a>
+      <a href="schedule.html">กำหนดการรับสมัคร</a>
+      <a href="contact.html">ติดต่อเรา</a>
+    </nav>
+
+    <a href="application.html" class="register-button">สมัครเรียน</a>
+  </header>
+
+  <main>
+    <section class="page-banner qualification-banner">
+      <div class="page-banner-overlay"></div>
+      <div class="page-banner-content">
+        <div class="banner-text">
+          <h1>ตรวจสอบสาขาวิชาที่สามารถเข้าศึกษาต่อ</h1>
+          <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ ปีการศึกษา 2570</p>
+        </div>
+        <div class="year-badge">
+          <strong>TCAS 2570</strong>
+          <span>ปีการศึกษา 2570</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="qualification-content">
+      <div class="qualification-card">
+        <div class="form-heading">
+          <h2>ตรวจสอบคุณวุฒิและสาขาวิชาสำหรับการสมัครเรียน</h2>
+          <p>กรุณาเลือกข้อมูลคุณวุฒิเดิมของท่านเพื่อค้นหาสาขาวิชาของ มจพ. ที่เปิดรับสมัคร</p>
+        </div>
+
+        <hr>
+
+        <form class="qualification-form" action="#" method="get">
+          <div class="form-row">
+            <label for="education-level">วุฒิการศึกษาที่ใช้สมัคร *</label>
+            <select id="education-level" name="education-level" required>
+              <option value="" selected disabled>-- กรุณาเลือกวุฒิการศึกษา --</option>
+              <option value="m6">มัธยมศึกษาปีที่ 6</option>
+              <option value="vocational">ประกาศนียบัตรวิชาชีพ (ปวช.)</option>
+              <option value="high-vocational">ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="subject-type">ประเภทวิชา *</label>
+            <select id="subject-type" name="subject-type" required>
+              <option value="" selected disabled>-- กรุณาเลือกประเภทวิชา --</option>
+              <option value="science">วิทยาศาสตร์และเทคโนโลยี</option>
+              <option value="business">บริหารธุรกิจ</option>
+              <option value="industry">อุตสาหกรรม</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="subject-group">กลุ่มวิชา *</label>
+            <select id="subject-group" name="subject-group" required>
+              <option value="" selected disabled>-- กรุณาเลือกกลุ่มวิชา --</option>
+              <option value="engineering">กลุ่มวิศวกรรมศาสตร์</option>
+              <option value="technology">กลุ่มเทคโนโลยี</option>
+              <option value="science">กลุ่มวิทยาศาสตร์</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="major">สาขาวิชา *</label>
+            <select id="major" name="major" required>
+              <option value="" selected disabled>-- กรุณาเลือกสาขาวิชา --</option>
+              <option value="engineering">วิศวกรรมศาสตร์</option>
+              <option value="industrial-management">เทคโนโลยีและการจัดการอุตสาหกรรม</option>
+              <option value="business">บริหารธุรกิจ</option>
+              <option value="science">วิทยาศาสตร์</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="work-field">สาขางาน *</label>
+            <select id="work-field" name="work-field" required>
+              <option value="" selected disabled>-- กรุณาเลือกสาขางาน --</option>
+              <option value="general">สาขางานทั่วไป</option>
+              <option value="technology">สาขางานเทคโนโลยี</option>
+              <option value="industry">สาขางานอุตสาหกรรม</option>
+            </select>
+          </div>
+
+          <div class="form-actions">
+            <button type="reset" class="reset-button">ล้างข้อมูล</button>
+            <button type="submit" class="search-button">ตรวจสอบข้อมูล</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <div class="footer-brand">
+          <span class="logo-badge">KMUTNB</span>
+          <strong>KMUTNB ADMISSION 2570</strong>
+        </div>
+        <address>
+          มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี<br>
+          เลขที่ 129 หมู่ 21 ตำบลเนินหอม อำเภอเมือง จังหวัดปราจีนบุรี 25230
+        </address>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright © 2570 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
