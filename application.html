@@ -55,14 +55,22 @@
           <p>โปรดกรอกข้อมูลของท่านด้วยความเป็นจริง ทางมหาวิทยาลัยจะใช้ข้อมูลนี้เป็นหลักฐานการสมัครขั้นต้น</p>
         </div>
 
-        <form class="application-form" action="#" method="post">
+        <form class="application-form" action="finish.html" method="get">
           <fieldset class="form-section personal-section">
             <legend>ประวัติส่วนตัวผู้สมัคร</legend>
+            <div class="form-row">
+              <label for="education">คำนำหน้า</label>
+              <select id="education" name="education" required>
+                <option value="" selected disabled>-- เลือกคำนำหน้า --</option>
+                <option value="mr">นาย</option>
+                <option value="mrs">นาง</option>
+                <option value="miss">นางสาว</option>
+              </select>
+            </div>
 
             <div class="form-row">
               <label for="first-name">ชื่อ (First Name) *</label>
-              <input type="text" id="first-name" name="first-name"
-                placeholder="กรุณากรอกชื่อจริงภาษาไทย (ไม่ต้องใส่คำนำหน้านาม)" required>
+              <input type="text" id="first-name" name="first-name" placeholder="กรุณากรอกชื่อจริงภาษาไทย" required>
             </div>
 
             <div class="form-row">
@@ -71,8 +79,8 @@
             </div>
             <div class="form-row">
               <label for="citizen-id">รหัสประจำตัว</label>
-              <input type="text" id="citizen-id" name="citizen-id" placeholder="กรุณากรอกรหัสประจำตัวของท่าน" required step="0.01"
-                min="0" max="4">
+              <input type="text" id="citizen-id" name="citizen-id" placeholder="กรุณากรอกรหัสประจำตัวของท่าน" required
+                step="0.01" min="0" max="4">
             </div>
             <div class="form-row">
               <label for="email">อีเมล (Email) *</label>
